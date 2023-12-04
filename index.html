@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakliye Tanıtımı</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Nakliye Tanıtımı">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="anasayfa" class="banner">
+            <div class="container">
+                <h1>Nakliye Tanıtımı</h1>
+                <p>Profesyonel, güvenilir ve uygun fiyatlı nakliye hizmetleri sunuyoruz.</p>
+                <a href="#hizmetlerimiz" class="button">Hizmetlerimizi Görün</a>
+            </div>
+        </section>
+        <section id="hakkimizda" class="about">
+            <div class="container">
+                <h2>Hakkımızda</h2>
+                <p>Nakliye Tanıtımı, 2020 yılında kurulmuş bir nakliye şirketidir. Türkiye'nin her yerine evden eve, ofisten ofise, parsiyel ve komple yük taşımacılığı yapmaktayız. Müşteri memnuniyetini ön planda tutarak, kaliteli, hızlı ve ekonomik çözümler sunuyoruz.</p>
+                <div class="cards">
+                    <div class="card">
+                        <img src="kalite.png" alt="Kalite">
+                        <h3>Kalite</h3>
+                        <p>Taşımacılıkta kalite standartlarını uyguluyoruz. Eşyalarınızı özenle paketliyor, güvenli bir şekilde taşıyor ve yerleştiriyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <img src="hiz.png" alt="Hız">
+                        <h3>Hız</h3>
+                        <p>Taşımacılıkta zaman çok önemlidir. Sizin için en uygun zamanı belirliyor, söz verdiğimiz saatte geliyor ve işimizi zamanında bitiriyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <img src="ekonomi.png" alt="Ekonomi">
+                        <h3>Ekonomi</h3>
+                        <p>Taşımacılıkta bütçenize uygun fiyatlar sunuyoruz. Nakliye ücretini belirlerken, eşya miktarı, mesafe, kat sayısı ve ek hizmetler gibi faktörleri göz önünde bulunduruyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hizmetlerimiz" class="services">
+            <div class="container">
+                <h2>Hizmetlerimiz</h2>
+                <p>Nakliye Tanıtımı olarak, siz değerli müşterilerimize aşağıdaki hizmetleri sunuyoruz:</p>
+                <ul class="list">
+                    <li>Evden eve nakliyat</li>
+                    <li>Ofisten ofise nakliyat</li>
+                    <li>Parsiyel yük taşımacılığı</li>
+                    <li>Komple yük taşımacılığı</li>
+                    <li>Depolama hizmeti</li>
+                    <li>Sigortalı taşımacılık</li>
+                    <li>Asansörlü taşımacılık</li>
+                    <li>Mobilya montaj ve demontaj</li>
+                </ul>
+            </div>
+        </section>
+        <section id="iletisim" class="contact">
+            <div class="container">
+                <h2>İletişim</h2>
+                <p>Bizimle iletişime geçmek için aşağıdaki formu doldurabilir veya telefon numaramızdan bize ulaşabilirsiniz.</p>
+                <form id="contact-form" onsubmit="return submitForm(event)">
+                    <div class="form-group">
+                        <label for="name">Adınız</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Gönder</button>
+                    </div>
+                </form>
+                <div id="contact-info">
+                    <p><strong>Telefon:</strong> +90 555 555 55 55</p>
+                    <p><strong>Adres:</strong> Bayrampaşa, İstanbul, Türkiye</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2023 Nakliye Tanıtımı. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
